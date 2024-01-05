@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    min-height: 0px;
+}
+
+.raids{
+    display: flex;
+    gap: 5vh 0px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.desc{
+    all:inherit;
+    box-shadow: none;
+}
+
+img{
+    max-width: 25vw;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+figure{
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 1vw;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    bottom: 1vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+}
