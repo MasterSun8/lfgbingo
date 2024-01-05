@@ -1,6 +1,27 @@
+*{
+    font-size: 2vh;
+}
+
 body{
     display: flex;
     min-height: 0px;
+}
+
+table{
+    table-layout: fixed;
+    height: 80vh;
+    aspect-ratio: 1;
+}
+
+tr{
+    height: 20%;
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    width: 20%;
+    aspect-ratio: 1;
 }
 
 .raids{

@@ -32,6 +32,7 @@ function generateTable(result) {
             if (i == j && i == 2) {
                 let x = Math.floor(Math.random() * tiles['free'].length)
                 cellText.nodeValue = tiles['free'][x]
+                cell.style.backgroundColor = '#9E009E'
             } else {
                 let x = Math.floor(Math.random() * result.length)
                 cellText.nodeValue = result.splice(x, 1)
