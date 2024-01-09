@@ -20,6 +20,13 @@ function makeBingo(raid = "") {
     }
     return result
 }
+
+function clicked(obj){
+    console.log(obj.style.backgroundColor)
+    obj.classList.toggle('close-x')
+    // obj.style.backgroundColor = obj.style.backgroundColor==='rgb(158, 0, 158)' ? '#000000' : '#9E009E'
+}
+
 function generateTable(result) {
     console.log(result)
     const tbl = document.createElement("table")
@@ -33,10 +40,12 @@ function generateTable(result) {
                 let x = Math.floor(Math.random() * tiles['free'].length)
                 cellText.nodeValue = tiles['free'][x]
                 cell.style.backgroundColor = '#9E009E'
+                // cell.style.color = '#9E009E'
             } else {
                 let x = Math.floor(Math.random() * result.length)
                 cellText.nodeValue = result.splice(x, 1)
             }
+            cell.onclick = function() {clicked(cell)}
             cell.appendChild(cellText)
             row.appendChild(cell)
         }

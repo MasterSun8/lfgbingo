@@ -65,3 +65,10 @@ footer{
     text-align: center;
     justify-content: space-evenly;
 }
+
+.close-x {
+    /* border: 7px solid var(--accent); */
+    background:
+        linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,var(--secondary) 45%,var(--secondary) 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+        linear-gradient(135deg, var(--accent) 0%,var(--accent) 43%,var(--secondary) 45%,var(--secondary) 55%,var(--accent) 57%,var(--accent) 100%);
+}
